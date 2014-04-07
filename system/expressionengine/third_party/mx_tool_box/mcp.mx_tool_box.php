@@ -47,6 +47,7 @@ class Mx_tool_box_mcp
 	
 	function layouts_clone () 
 	{
+		$this->EE->load->model('channel_model');
 		$vars = array();
 		$vars['message']  = false;
 		$vars['export_out']  = false;
@@ -537,7 +538,7 @@ class Mx_tool_box_mcp
 		$vars['_base'] = $this->base;
 		$vars['_form_base'] = $this->form_base;
 		$vars['img_path'] = $this->EE->config->item('theme_folder_url');
-		$this->EE->cp->set_variable('cp_page_title', lang($lang_key));
+		$this->EE->view->cp_page_title = lang($lang_key);
 		$this->EE->cp->set_breadcrumb($this->base, lang('mx_tool_box_module_name'));
 
 		return $this->EE->load->view('_wrapper', $vars, TRUE);
