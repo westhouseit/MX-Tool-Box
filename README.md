@@ -1,5 +1,9 @@
 MX-Tool-Box
 ===========
+
+UPDATE: Max's repo has reappeared! https://github.com/MaxLazar/mx_tool_box
+Since it appears to contain everything in this one plus at least one fix, I encourage you to download from his instead. If it ever disappears again you can find my new fork @ https://github.com/westhouseit/mx_tool_box
+
 Version: 1.2.1
 
 
